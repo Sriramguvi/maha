@@ -561,7 +561,7 @@ function buildTable() {
   var data = pagination(state.querySet, state.page, state.rows)
   var myList = data.querySet
 
-  for (var i = 1 in myList) {
+  for (var i=0;i<mylist.length;i++) {
       //Keep in mind we are using "Template Litterals to create rows"
       var row = `<tr>
                 <td>${myList[i].rank}</td>
